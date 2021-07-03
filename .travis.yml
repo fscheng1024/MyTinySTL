@@ -61,8 +61,8 @@ before_script:
 script:
   - mkdir build && cd ./build
   - cmake ..
-  - make
-  - cd ../bin && ./stltest
+  - cmake --build .
+  - ./stltest
   
 branches:
   only:
